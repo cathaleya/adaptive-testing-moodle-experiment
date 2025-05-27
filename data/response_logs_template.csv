@@ -1,0 +1,4 @@
+user_id,question_id,is_correct
+user1,q1,1
+user1,q2,0
+user2,q3,1
