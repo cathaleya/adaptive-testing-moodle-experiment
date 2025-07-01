@@ -1,18 +1,18 @@
 # Adaptive testing moodle experiment
 
-This repository contains minimal logic for adaptive testing using:
-- IRT (Rasch Model)
-- BKT (Bayesian Knowledge Tracing via pyBKT)
+Repositori ini berisi logika minimal untuk pengujian adaptif menggunakan:
+IRT (Model Rasch)
+BKT (Bayesian Knowledge Tracing melalui pyBKT)
 
-## Structure
+#Struktur
+models/bkt_model.py: Model BKT adaptif dengan pelacakan keterampilan.
+models/irt_model.py: Model IRT sederhana dengan pembaruan theta secara online.
+data/question_metadata.csv: Metadata soal, berisi keterampilan dan tingkat kesulitan soal.
+data/response_logs.csv: Log jawaban pengguna.
+requirements.txt: Instal dependensi dengan menjalankan pip install -r requirements.txt.
+Contoh Penggunaan
 
-- `models/bkt_model.py`: Adaptive BKT model with skill tracking.
-- `models/irt_model.py`: Simple IRT model with online theta updating.
-- `data/question_metadata.csv`: Question skill and difficulty.
-- `data/response_logs.csv`: User answer logs.
-- `requirements.txt`: Install dependencies with `pip install -r requirements.txt`.
-
-## Example Usage
+## Contoh Penggunaan
 
 ```python
 from models.bkt_model import BKTModel
